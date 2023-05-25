@@ -1,0 +1,116 @@
+/* IMPORTS OTHER CSS FILES */
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+
+/* ROOT SETTINGS */
+:root {
+  --playfair-display: 'Playfair Display', serif;
+  --plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --primary-color: #b1454a;
+  --secondary-color: #121212;
+
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --color-white: #fff;
+  --color-creamson: #fff0de;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* GENERAL SETTINGS */
+body {
+  background-color: var(--color-creamson);
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--playfair-display);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 7.5rem;
+  line-height: 138px;
+  color: var(--color-white);
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* BACKGROUND COLOR */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+/* BUTTON */
+.btn-black {
+  background-color: var(--secondary-color);
+  padding: 20px 60px;
+  border-radius: 36px;
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 992px) {
+  /* CONTAINER */
+  .container {
+    max-width: 1280px;
+    margin: 0px auto;
+  }
+
+  /* ROWS & COLUMNS */
+  .row {
+    display: flex;
+  }
+
+  .col {
+    flex: 1;
+  }
+}

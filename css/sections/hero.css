@@ -1,0 +1,133 @@
+.hero .hero__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .hero__image img {
+  position: relative;
+  width: 100%;
+  transform: matrix(1, 0.05, 0, 1.25, 0, 0);
+}
+
+.hero .hero__image h2 {
+  font-size: 2.5rem;
+  line-height: 60px;
+  padding: 20px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.hero .hero__content .hero__content-info {
+  margin: 50px 30px;
+}
+
+.hero .hero__content .hero__content-info h1 {
+  font-size: 3.7rem;
+  padding-bottom: 30px;
+}
+
+.hero .hero__content .hero__content-info p {
+  padding-bottom: 60px;
+}
+
+.hero .hero__content .hero__content-info .col {
+  padding-bottom: 60px;
+}
+
+.hero .hero__content .hero__content-info .col:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero__content .hero__content-info img {
+  width: 80%;
+}
+
+.hero .hero__content .testimonial {
+  padding: 50px 30px;
+}
+
+.hero .hero__content .testimonial .customers .row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.hero .hero__content .testimonial .customers h4 {
+  font-size: 3.875rem;
+}
+
+.hero .hero__content .testimonial .customers p {
+  opacity: 0.5;
+}
+
+.hero .hero__content .testimonial .review img {
+  width: 42px;
+}
+
+.hero .hero__content .testimonial .review p {
+  font-size: 0.75rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .hero .hero__image img {
+    transform: none;
+    width: 120%;
+    height: calc(100vh-74px);
+  }
+
+  .hero .hero__image h2 {
+    font-size: 7.5rem;
+    line-height: 138px;
+  }
+
+  .hero .hero__content {
+    flex: 1.445;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero .hero__content .hero__content-info {
+    margin: 100px 90px;
+  }
+
+  .hero .hero__content .hero__content-info h1 {
+    font-size: 5rem;
+  }
+
+  .hero .hero__content .testimonial {
+    padding: 30px;
+  }
+
+  .hero .hero__content .testimonial .customers h4,
+  .hero .hero__content .testimonial .customers p {
+    text-align: center;
+  }
+
+  .hero .hero__content .testimonial .customers .row {
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  .hero .hero__content .testimonial .review {
+    gap: 20px;
+    border-left: 1px solid rgba(2, 2, 2, 0.1);
+    padding-left: 20px;
+  }
+
+  .hero .hero__content .testimonial .review .col:first-child {
+    flex: 1;
+  }
+
+  .hero .hero__content .testimonial .review .col:nth-child(2) {
+    flex-grow: 3;
+  }
+}
